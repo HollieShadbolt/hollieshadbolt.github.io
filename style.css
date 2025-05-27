@@ -1,0 +1,48 @@
+
+@-webkit-keyframes bg-scrolling-reverse { 100% { background-position: 543px 579px; }}
+@-moz-keyframes bg-scrolling-reverse { 100% { background-position: 543px 579px; }}
+@-o-keyframes bg-scrolling-reverse { 100% {background-position: 543px 579px; }}
+@keyframes bg-scrolling-reverse { 100% { background-position: 543px 579px; }}
+@-webkit-keyframes bg-scrolling { 0% {background-position: 543px 579px; }}
+@-moz-keyframes bg-scrolling { 0% {background-position: 543px 579px; }}
+@-o-keyframes bg-scrolling { 0% {background-position: 543px 579px; }}
+@keyframes bg-scrolling { 0% {background-position: 543px 579px; }}
+
+@media (prefers-color-scheme: dark) {
+    html {filter: brightness(50%); }
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url(bg_smaller.png);
+    -webkit-animation: bg-scrolling-reverse 20s infinite;
+    -moz-animation: bg-scrolling-reverse 20s infinite;
+    -o-animation: bg-scrolling-reverse 20s infinite;
+    animation: bg-scrolling-reverse 20s infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #7A3950;
+}
+
+body {
+    width: 100vw;
+    max-width: 100vh;
+    height: 100vw;
+    max-height: 100vh;
+    font-size: 0;
+}
+
+img {
+    width: 30%;
+    margin: 10%;
+}

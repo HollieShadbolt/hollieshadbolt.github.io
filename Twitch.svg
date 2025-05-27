@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 26 26" fill="white" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <filter id="drop-shadow-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%" bx:preset="drop-shadow 1 1 1 0 0.5 #000">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="0"/>
+      <feOffset dx="1" dy="1"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path d="M 12.571 5.714 L 14.286 5.714 L 14.286 10.857 L 12.57 10.857 L 12.571 5.714 Z M 17.286 5.714 L 19 5.714 L 19 10.857 L 17.286 10.857 L 17.286 5.714 Z M 7 1 L 2.714 5.286 L 2.714 20.714 L 7.857 20.714 L 7.857 25 L 12.143 20.714 L 15.571 20.714 L 23.286 13 L 23.286 1 L 7 1 Z M 21.571 12.143 L 18.143 15.571 L 14.714 15.571 L 11.714 18.571 L 11.714 15.571 L 7.857 15.571 L 7.857 2.714 L 21.571 2.714 L 21.571 12.143 Z" style="filter: url('#drop-shadow-filter-0');"/>
+</svg>
